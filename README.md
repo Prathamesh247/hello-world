@@ -1,3 +1,3 @@
 # rust-practice
 
-A practicing repository for Rust.
+Just a practicing repository for Rust.
