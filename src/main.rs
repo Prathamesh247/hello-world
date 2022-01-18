@@ -26,4 +26,14 @@ fn main() {
     let a = [1; 3];
     println!("The array is {:?}", a);
     a.print_type();
+
+    let b = 7;
+
+    if b%2 == 0 {
+        println!("Number is Even");
+    }  else if b%2 == 1 {
+        println!("Number is Odd");
+    }  else {
+        println!("It's not an integer!")
+    }
 }
