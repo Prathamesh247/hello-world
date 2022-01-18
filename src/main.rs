@@ -21,16 +21,19 @@ fn main() {
     let y:i32 = 5;
     y.print_type();
 
+
     //Tuple
     let t = (1, 2, 3);
     let (one, two, _) = t;
     println!("{} & {}", one, two);
     t.print_type();
 
+    
     //Array
     let a = [1; 3];
     println!("The array is {:?}", a);
     a.print_type();
+
 
     //if else if flow control
     let b = 7;
@@ -41,6 +44,7 @@ fn main() {
     }  else {
         println!("It's not an integer!")
     }
+
 
     //loops
     let mut d = 2;
@@ -54,6 +58,7 @@ fn main() {
         }
     }
     println!("Loop Ends!");
+
 
     //while loop
     let mut w = 2;
@@ -75,5 +80,18 @@ fn main() {
     let arr = [7, 8, 9]; 
     for val in arr {
         println!("The value is {}", val);
+    }
+
+
+    //match
+    //match branches need to be exhaustive
+    let m = true;
+    let n = false;
+    match (m, n) {
+        (true, true) => println!("Both bulbs are ON"),
+        (true, false) => println!("Only M bulb is ON"),
+        (false, true) => println!("Only N bulb is ON"),
+        //if we need need to skip some cases we can use "_" as a catch all branch
+        _ => println!("Both bulbs are OFF")
     }
 }
